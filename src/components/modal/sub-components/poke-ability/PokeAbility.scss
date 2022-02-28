@@ -1,0 +1,17 @@
+@import '../../../../themes/index.scss';
+.pokemon-abilities {
+  .score-container {
+    border: 3px solid $raisin-black;
+    box-sizing: border-box;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ability {
+    font-size: 10px;
+  }
+}

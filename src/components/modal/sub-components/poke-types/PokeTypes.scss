@@ -1,0 +1,57 @@
+@import '../../../../themes/index.scss';
+.type-tag {
+  border-radius: 1rem;
+  box-shadow: inset 0px -2px 0px $coal-black;
+  font-size: 8px;
+  padding: 0.5px 10px 1.5px 10px;
+  height: 1rem;
+  width: 3rem;
+}
+
+.ghost {
+  background: $dust-storm;
+}
+
+.poison {
+  background: $middle-purple;
+}
+
+.psychic {
+  background: $pastel-orange;
+}
+
+.fire {
+  background: $orange-crayola;
+}
+
+.normal {
+  background: $anti-flash-white;
+}
+
+.fairy {
+  background: $pink;
+}
+
+.bug {
+  background: $begonia;
+}
+
+.grass {
+  background: $mantis;
+}
+
+.electric {
+  background: $jonquil;
+}
+
+.ice {
+  background: $water;
+}
+
+.water {
+  background: $maya-blue;
+}
+
+.flying {
+  background: $naples-yellow;
+}

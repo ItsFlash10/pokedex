@@ -1,0 +1,61 @@
+@import "../../themes/index.scss";
+.pd-footer {
+  a {
+    outline: none;
+    text-decoration: none;
+    color: $black;
+    border-bottom: none;
+    &:hover {
+      color: black;
+    }
+  }
+  span{
+    padding-bottom: 1rem;
+  }
+  .meet-our-team{
+    cursor: pointer;
+  }
+  display: flex;
+  bottom: 0;
+  justify-content: space-between;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  margin-top: 3rem;
+  position: sticky;
+}
+
+@media (max-width: 768px) {
+  .pd-footer {
+    font-size: 18px;
+    padding: 1rem 3rem 0.5rem 3rem;
+  }
+  .mobile-modal {
+    position: relative;
+  }
+}
+
+@media (max-width: 450px) {
+  .pd-footer {
+    span {
+      font-size: 15px;
+    }
+    flex-direction: column-reverse;
+    padding: 0;
+    align-items: center;
+    .meet-our-team{
+      font-size: 18px;
+      font-weight: bolder;
+      padding-bottom: 0.5rem;
+    }
+  }
+  .mobile-modal {
+    position: relative;
+  }
+}
+@media (max-width: 360px) {
+  .pd-footer {
+    span {
+      font-size: 13px;
+    }
+  }
+}

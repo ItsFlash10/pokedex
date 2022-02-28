@@ -1,0 +1,267 @@
+@import '../../themes/index.scss';
+
+.pokemon-modal {
+  display: flex;
+  background: linear-gradient(180deg, $persian-plum 42.19%, $venetian-red 100%);
+  border-radius: 0.5rem;
+  width: 30rem;
+  height: 14.5rem;
+  .pokemon-image-container {
+    width: 45%;
+    padding: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    background: linear-gradient(270deg, $chinese-brown 0.15%, $cg-red 100%);
+    img {
+      height: 12rem;
+    }
+    .pokemon-name-mobile {
+      display: none;
+    }
+    .pokemon-types {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 0.5rem;
+      .type-tag {
+        height: 0.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0.2rem;
+      }
+    }
+  }
+  .pokemon-description-container {
+    width: 55%;
+    padding: 1rem;
+    padding-left: 0.5rem;
+    .title-base-points-container {
+      .pokemon-types-mobile {
+        display: none;
+      }
+      display: flex;
+      justify-content: space-between;
+      .pokemon-name {
+        color: $white;
+        text-transform: capitalize;
+        font-size: 22px;
+      }
+      .pokemon-base-point {
+        height: 1.7rem;
+        width: 1.7rem;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+        background-color: $yellow-munsell;
+      }
+    }
+    .pokemon-stats-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      .pokemon-abilities-types {
+        height: 2.4rem;
+        width: fit-content;
+        min-width: 10rem;
+        padding: 0.3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 0.5rem;
+        font-size: 10px;
+        text-transform: capitalize;
+        background-color: $white;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 0.75rem;
+        flex-direction: column;
+      }
+      .pokemon-hp-speed {
+        background-color: $white;
+        width: 15rem;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        height: 3rem;
+        border-radius: 0.5rem;
+      }
+      .pokemon-abilities-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        .pokemon-abilities {
+          height: 2.75rem;
+          width: 3.2rem;
+          border-radius: 0.5rem;
+          background-color: $white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .score-container {
+            height: 1.5rem;
+            width: 1.5rem;
+            border: 2px solid $black;
+          }
+          .ability {
+            margin-top: 0.1rem;
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pd-modal {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  z-index: 51;
+  top: -10%;
+  left: 0;
+  transform: scale(1.5);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $pitch-black;
+  .modal-button-container {
+    width: 30rem;
+  }
+  .close-modal-icon {
+    height: 1.3rem;
+    float: right;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .pokemon-modal {
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    background: linear-gradient(
+      270deg,
+      $chinese-brown 0.15%,
+      $venetian-red 100%
+    );
+    .pokemon-image-container {
+      padding: 0;
+      flex-direction: column;
+      z-index: 21;
+      padding-top: 7rem;
+      .pokemon-name-mobile {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        color: $white;
+        height: 5rem;
+        font-size: 36px;
+        text-transform: capitalize;
+      }
+      width: 100%;
+      height: 35%;
+      border-radius: 0;
+      display: flex;
+      justify-content: center;
+      img {
+        height: 20rem;
+      }
+      .pokemon-types {
+        display: none;
+      }
+    }
+    .pokemon-description-container {
+      width: 100%;
+      height: 65%;
+      background: linear-gradient(
+        180deg,
+        $persian-plum 42.19%,
+        $venetian-red 100%
+      );
+      border-radius: 1rem;
+      padding: 1rem;
+      padding-top: 7rem;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      .title-base-points-container {
+        align-items: center;
+        .pokemon-types-mobile {
+          display: flex;
+          .type-tag {
+            height: 1.3rem;
+            width: 4.62rem;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0.2rem;
+          }
+        }
+        .pokemon-name {
+          display: none;
+        }
+        .pokemon-base-point {
+          height: 2.5rem;
+          width: 2.5rem;
+          font-size: 16px;
+        }
+      }
+      .pokemon-stats-container {
+        align-items: center;
+        .pokemon-abilities-types {
+          height: 6.25rem;
+          font-size: 28px;
+          min-width: 24rem;
+          padding-top: 1.2rem;
+          padding-bottom: 1.2rem;
+          .types {
+            font-size: 18px;
+          }
+        }
+        .pokemon-hp-speed {
+          height: 11.5rem;
+          width: 24rem;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+        .pokemon-abilities-container {
+          width: 24rem;
+          .pokemon-abilities {
+            height: 5rem;
+            width: 5rem;
+            .score-container {
+              height: 2.3rem;
+              width: 2.3rem;
+              font-size: 18px;
+              border: 2.27px solid $black;
+            }
+            .ability {
+              margin-top: 0.5rem;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .pd-modal {
+    height: 60rem;
+  }
+  .close-modal-icon {
+    display: none;
+  }
+  .pd-modal {
+    transform: scale(1);
+  }
+}

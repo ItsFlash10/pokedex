@@ -1,0 +1,27 @@
+.poke-card-container {
+  display: flex;
+  flex-flow: row wrap;
+  place-content: flex-start center;
+  height: calc(100% - 22.4rem);
+  overflow-y: auto;
+  margin-top: 1rem;
+  .MuiCircularProgress-root{
+    height: 80% !important;
+    display: flex;
+    justify-items: center;
+  }
+}
+
+@media (max-width:768px) {
+  .poke-card-container{
+    width: 49rem;
+  }  
+}
+
+@media (max-width:425px) {
+  .poke-card-container{
+    width:25rem;
+    height: unset;
+    margin-bottom: 3.3rem;
+  }  
+}

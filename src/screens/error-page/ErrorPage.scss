@@ -1,0 +1,158 @@
+@import '../../themes/index.scss';
+.error-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $venetian-red;
+
+  .image-container {
+    margin-top: 2rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    .rocket-team {
+      margin-top: 15rem;
+      position: absolute;
+      height: 15rem;
+    }
+
+    .error-404 {
+      font-size: 200px;
+      font-weight: bold;
+      letter-spacing: 0.25rem;
+      color: $pitch-black;
+    }
+  }
+
+  .description-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 2.3rem;
+      color: $anti-flash-white;
+      margin-bottom: 2.5rem;
+    }
+
+    .black-text {
+      color: $black;
+    }
+
+    .return-button {
+      margin-top: 2rem;
+      width: 10rem;
+      background-color: $yellow-munsell;
+      box-shadow: 0px -6.5px 0px 0px #0000002e inset;
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .error-page {
+    .image-container {
+      .rocket-team {
+        margin-top: 17rem;
+        height: 15rem;
+      }
+      .error-404 {
+        font-size: 210px;
+      }
+    }
+
+    .description-btn-container {
+      margin-top: 1rem;
+    }
+  }
+}
+@media (min-width: 540px) {
+  .error-page {
+    .image-container {
+      .rocket-team {
+        margin-top: 11rem;
+        height: 15rem;
+      }
+      .error-404 {
+        font-size: 210px;
+      }
+    }
+
+    .description-btn-container {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .error-page {
+    justify-content: flex-start;
+    .image-container {
+      margin-top: 2rem;
+      .rocket-team {
+        margin-top: 18rem;
+        height: 30rem;
+      }
+
+      .error-404 {
+        margin-top: 8rem;
+        font-size: 440px;
+      }
+    }
+
+    .description-btn-container {
+      margin-top: 25rem;
+
+      .description {
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+        line-height: 3.5rem;
+      }
+      .return-button {
+        height: 4rem;
+        width: 14rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .error-page {
+    justify-content: flex-start;
+    .image-container {
+      margin-top: 5rem;
+      .rocket-team {
+        margin-top: 6rem;
+        height: 30rem;
+      }
+
+      .error-404 {
+        display: flex;
+        align-items: center;
+        font-size: 510px;
+      }
+    }
+
+    .description-btn-container {
+      margin-top: 8rem;
+
+      .description {
+        flex-direction: row;
+        margin-bottom: 2.5rem;
+        .black-text {
+          margin-left: 1rem;
+        }
+      }
+      .return-button {
+        font-size: 19px;
+      }
+    }
+  }
+}

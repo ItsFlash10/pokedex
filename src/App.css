@@ -1,0 +1,23 @@
+@import "./themes/index.scss";
+
+* {
+  top: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay.active {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index:3;
+  background-color: rgba(0, 0, 0, 0.5);
+}
